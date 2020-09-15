@@ -24,6 +24,7 @@ body {
   overflow: hidden;
   border-bottom-right-radius: 6px;
 }
+
 .triangle:after {
   content: "";
   display: block;
@@ -63,16 +64,16 @@ body {
   text-transform: uppercase;
 }
 
- span.font-mobile {
-   font-size: 45px;
- }
+span.font-mobile {
+  font-size: 45px;
+}
 
-img#bar {
+#bar {
   position: absolute;
   width: 160px;
 }
 
-img#hangman-Head {
+#hangman-Head {
   position: absolute;
   width: 110px;
   height: 120px;
@@ -81,7 +82,7 @@ img#hangman-Head {
   z-index: 1;
 }
 
-img#hangman-Neck {
+#hangman-Neck {
   position: absolute;
   width: 30px;
   height: 20px;
@@ -89,14 +90,14 @@ img#hangman-Neck {
   top: 270px;
 }
 
-img#hangman-Corpus {
+#hangman-Corpus {
   position: absolute;
   width: 80px;
   left: 306px;
   top: 285px;
 }
 
-img#hangman-Left-Arm {
+#hangman-Left-Arm {
   position: absolute;
   width: 100px;
   left: 240px;
@@ -104,7 +105,7 @@ img#hangman-Left-Arm {
   z-index: 1;
 }
 
-img#hangman-Right-Arm {
+#hangman-Right-Arm {
   position: absolute;
   width: 100px;
   left: 354px;
@@ -112,7 +113,7 @@ img#hangman-Right-Arm {
   z-index: 1;
 }
 
-img#hangman-Left-Leg {
+#hangman-Left-Leg {
   transform: rotate(-5deg);
   width: 70px;
   position: absolute;
@@ -121,7 +122,7 @@ img#hangman-Left-Leg {
   z-index: 1;
 }
 
-img#hangman-Right-Leg {
+#hangman-Right-Leg {
   transform: rotate(5deg);
   width: 70px;
   position: absolute;
@@ -130,7 +131,7 @@ img#hangman-Right-Leg {
   z-index: 1;
 }
 
-img#hangman-Left-Foot {
+#hangman-Left-Foot {
   width: 70px;
   position: absolute;
   left: 255px;
@@ -138,7 +139,7 @@ img#hangman-Left-Foot {
   transform: rotate(-2deg);
 }
 
-img#hangman-Right-Foot {
+#hangman-Right-Foot {
   width: 70px;
   position: absolute;
   left: 370px;
@@ -146,14 +147,14 @@ img#hangman-Right-Foot {
   transform: rotate(2deg);
 }
 
-img#hangman-Left-Hand {
+#hangman-Left-Hand {
   width: 24px;
   position: absolute;
   left: 237px;
   top: 361px;
 }
 
-img#hangman-Right-Hand {
+#hangman-Right-Hand {
   width: 24px;
   position: absolute;
   left: 433px;

@@ -57,11 +57,11 @@ body {
 span.font-mobile {
   font-size: 45px; }
 
-img#bar {
+#bar {
   position: absolute;
   width: 160px; }
 
-img#hangman-Head {
+#hangman-Head {
   position: absolute;
   width: 110px;
   height: 120px;
@@ -69,34 +69,34 @@ img#hangman-Head {
   left: 289px;
   z-index: 1; }
 
-img#hangman-Neck {
+#hangman-Neck {
   position: absolute;
   width: 30px;
   height: 20px;
   left: 329px;
   top: 270px; }
 
-img#hangman-Corpus {
+#hangman-Corpus {
   position: absolute;
   width: 80px;
   left: 306px;
   top: 285px; }
 
-img#hangman-Left-Arm {
+#hangman-Left-Arm {
   position: absolute;
   width: 100px;
   left: 240px;
   top: 285px;
   z-index: 1; }
 
-img#hangman-Right-Arm {
+#hangman-Right-Arm {
   position: absolute;
   width: 100px;
   left: 354px;
   top: 285px;
   z-index: 1; }
 
-img#hangman-Left-Leg {
+#hangman-Left-Leg {
   transform: rotate(-5deg);
   width: 70px;
   position: absolute;
@@ -104,7 +104,7 @@ img#hangman-Left-Leg {
   top: 396px;
   z-index: 1; }
 
-img#hangman-Right-Leg {
+#hangman-Right-Leg {
   transform: rotate(5deg);
   width: 70px;
   position: absolute;
@@ -112,27 +112,27 @@ img#hangman-Right-Leg {
   top: 396px;
   z-index: 1; }
 
-img#hangman-Left-Foot {
+#hangman-Left-Foot {
   width: 70px;
   position: absolute;
   left: 255px;
   top: 530px;
   transform: rotate(-2deg); }
 
-img#hangman-Right-Foot {
+#hangman-Right-Foot {
   width: 70px;
   position: absolute;
   left: 370px;
   top: 530px;
   transform: rotate(2deg); }
 
-img#hangman-Left-Hand {
+#hangman-Left-Hand {
   width: 24px;
   position: absolute;
   left: 237px;
   top: 361px; }
 
-img#hangman-Right-Hand {
+#hangman-Right-Hand {
   width: 24px;
   position: absolute;
   left: 433px;
