@@ -1,16 +1,16 @@
 const wordEl = document.getElementById('word');
 const wrongLetterEl = document.getElementById('wrong-letter-container');
-const playBtnEl = document.getElementById('play-button');
-const popup = document.getElementById('popup-container');
+const buttonEl = document.getElementById('play-button');
+const popupEl = document.getElementById('popup-container');
 const hangmanPartsEl = document.querySelectorAll('.figure-part');
 const finalMessage = document.getElementById('final-message');
 const notificationEl = document.getElementById('notification-container');
 const finalMessageRevealWord = document.getElementById('final-message-reveal-word');
 
 
-let words = ["belgia", "czechy", "francja", "dania", "holandia", "polska", "hiszpania", "niemcy", "rosja", "portugalia"];
+let countries = ["belgia", "czechy", "francja", "dania", "holandia", "polska", "hiszpania", "niemcy", "rosja", "portugalia"];
 
-let selectedWord = words[Math.floor(Math.random() * words.length)];
+let selectedWord = countries[Math.floor(Math.random() * countries.length)];
 
 const correctLetters = [];
 const wrongLetters = [];
@@ -33,7 +33,7 @@ function displayWord() {
 
     if (innerWord === selectedWord.toUpperCase()) {
         finalMessage.innerText = 'THANK YOU FOR PLAYING';
-        popup.style.display = 'flex';
+        popupEl.style.display = 'flex';
     }
 }
 
@@ -58,7 +58,7 @@ function updateWrongLettersEl() {
     if (wrongLetters.length === hangmanPartsEl.length) {
         finalMessage.innerText = 'GAME OVER';
         finalMessageRevealWord.innerText = `The word was: ${selectedWord}`;
-        popup.style.display = 'flex';
+        popupEl.style.display = 'flex';
     }
 }
 
@@ -100,16 +100,16 @@ window.addEventListener('keydown', e => {
     }
 })
 
-playBtnEl.addEventListener('click', () => {
+buttonEl.addEventListener('click', () => {
 
     correctLetters.splice(0);
     wrongLetters.splice(0);
 
-    selectedWord = words[Math.floor(Math.random() * words.length)];
+    selectedWord = countries[Math.floor(Math.random() * countries.length)];
 
     displayWord();
     updateWrongLettersEl();
 
-    popup.style.display = 'none';
+    popupEl.style.display = 'none';
 })
 displayWord();
