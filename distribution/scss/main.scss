@@ -1,8 +1,4 @@
-$primary-color: #567;
-$secondary-color: #f4f40b;
-$background-color: #008B8B;
-$background-color2: #97a6b5;
-$triangle-color: #5481eb;
+@import "config";
 
 * {
   box-sizing: border-box;
@@ -18,14 +14,24 @@ body {
 }
 
 .triangle {
-  position: -webkit-sticky;
+  position: sticky;
   width: 0;
   height: 0;
-  left: 100%;
   top: 100%;
-  border-bottom: 300px solid $triangle-color;
-  border-left: 310px solid transparent;
+  left: 100%;
+  padding-bottom: 25%;
+  padding-left: 25%;
+  overflow: hidden;
   border-bottom-right-radius: 6px;
+}
+.triangle:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -500px;
+  border-top: 500px solid transparent;
+  border-right: 500px solid $triangle-color;
 }
 
 #container {
@@ -56,6 +62,10 @@ body {
   text-align: left;
   text-transform: uppercase;
 }
+
+ span.font-mobile {
+   font-size: 45px;
+ }
 
 img#bar {
   position: absolute;
@@ -233,3 +243,5 @@ img#hangman-Right-Hand {
 .notification-container.show {
   transform: translateX(-50%) translateY(-50px);
 }
+
+@import "mobile";

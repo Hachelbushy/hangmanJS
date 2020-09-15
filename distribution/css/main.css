@@ -10,14 +10,24 @@ body {
   overflow: hidden; }
 
 .triangle {
-  position: -webkit-sticky;
+  position: sticky;
   width: 0;
   height: 0;
-  left: 100%;
   top: 100%;
-  border-bottom: 300px solid #5481eb;
-  border-left: 310px solid transparent;
+  left: 100%;
+  padding-bottom: 25%;
+  padding-left: 25%;
+  overflow: hidden;
   border-bottom-right-radius: 6px; }
+
+.triangle:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -500px;
+  border-top: 500px solid transparent;
+  border-right: 500px solid #5481eb; }
 
 #container {
   border-radius: 6px;
@@ -43,6 +53,9 @@ body {
   width: 50%;
   text-align: left;
   text-transform: uppercase; }
+
+span.font-mobile {
+  font-size: 45px; }
 
 img#bar {
   position: absolute;
@@ -198,3 +211,105 @@ img#hangman-Right-Hand {
 
 .notification-container.show {
   transform: translateX(-50%) translateY(-50px); }
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 0; }
+  span.font-mobile {
+    margin-left: 10px;
+    font-size: 25px; }
+  .letter {
+    font-size: 10px;
+    position: relative; }
+  #container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff; }
+  #wrong-letter-container {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 50px;
+    color: #567;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    text-transform: uppercase; }
+  .figure-part {
+    display: flex; }
+  img#hangman-Head {
+    position: absolute;
+    width: 110px;
+    height: 120px;
+    top: 55px;
+    left: 90px;
+    z-index: 1; }
+  img#hangman-Neck {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 132px;
+    top: 170px; }
+  img#hangman-Corpus {
+    position: absolute;
+    width: 80px;
+    left: 108px;
+    top: 184px; }
+  img#hangman-Left-Arm {
+    position: absolute;
+    width: 100px;
+    left: 40px;
+    top: 184px;
+    z-index: 1; }
+  img#hangman-Right-Arm {
+    position: absolute;
+    width: 100px;
+    left: 157px;
+    top: 184px;
+    z-index: 1; }
+  img#hangman-Left-Leg {
+    transform: rotate(-5deg);
+    width: 70px;
+    position: absolute;
+    left: 85px;
+    top: 300px;
+    z-index: 1; }
+  img#hangman-Right-Leg {
+    transform: rotate(5deg);
+    width: 70px;
+    position: absolute;
+    left: 140px;
+    top: 300px;
+    z-index: 1; }
+  img#hangman-Left-Foot {
+    width: 70px;
+    position: absolute;
+    left: 60px;
+    top: 440px;
+    transform: rotate(-2deg); }
+  img#hangman-Right-Foot {
+    width: 70px;
+    position: absolute;
+    left: 165px;
+    top: 440px;
+    transform: rotate(2deg); }
+  img#hangman-Left-Hand {
+    width: 24px;
+    position: absolute;
+    left: 35px;
+    top: 263px; }
+  img#hangman-Right-Hand {
+    width: 24px;
+    position: absolute;
+    left: 238px;
+    top: 263px; }
+  .notification-container {
+    font-size: 12px; } }

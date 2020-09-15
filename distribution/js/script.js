@@ -42,7 +42,7 @@ displayWord();
 function updateWrongLettersEl() {
     wrongLetterEl.innerHTML = `
     ${wrongLetters.length > 0 ? '<p>YOU MISSED:</p>' : ''}
-    ${wrongLetters.map(letter => `<span style="font-size: 40px; color:#5481eb">${letter}</span>`)}
+    ${wrongLetters.map(letter => `<span class="font-mobile" style="color:#5481eb">${letter}</span>`)}
      `;
 
     hangmanPartsEl.forEach((part, index) => {
@@ -57,7 +57,7 @@ function updateWrongLettersEl() {
 
     if (wrongLetters.length === hangmanPartsEl.length) {
         finalMessage.innerText = 'GAME OVER';
-        finalMessageRevealWord.innerText = `The word was: ${selectedWord}`;
+        // finalMessageRevealWord.innerText = `The word was: ${selectedWord}`;
         popupEl.style.display = 'flex';
     }
 }
@@ -92,11 +92,6 @@ window.addEventListener('keydown', e => {
                 showNotification();
             }
         }
-        // for (let i = 0; i < correctLetters.length; i++){
-        //     if (correctLetters[i] === this.value.toLowerCase()){
-        //
-        //     }
-        // }
     }
 })
 
