@@ -1,0 +1,14 @@
+{
+  "name": "hangmanjs",
+  "version": "1.0.0",
+  "description": "Hangman JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w distribution/scss/ -o distribution/css/ --recursive"
+  },
+  "author": "Mateusz Zakrzewski",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

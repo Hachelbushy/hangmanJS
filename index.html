@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="distribution/css/main.css">
+    <title>Hangman - Państwa Europy</title>
+</head>
+<body>
+<div id="container">
+    <div class="figure-container" id="game-container">
+        <img id="bar" src="distribution/images/bar.png" alt="">
+        <img class="figure-part" id="hangman-Head" src="distribution/images/1.png" alt="">
+        <img class="figure-part" id="hangman-Neck" src="distribution/images/2.png" alt="">
+        <img class="figure-part" id="hangman-Corpus" src="distribution/images/3.png" alt="">
+        <img class="figure-part" id="hangman-Left-Arm" src="distribution/images/4.png" alt="">
+        <img class="figure-part" id="hangman-Right-Arm" src="distribution/images/5.png" alt="">
+        <img class="figure-part" id="hangman-Left-Hand" src="distribution/images/6.png" alt="">
+        <img class="figure-part" id="hangman-Right-Hand" src="distribution/images/7.png" alt="">
+        <img class="figure-part" id="hangman-Left-Leg" src="distribution/images/8.png" alt="">
+        <img class="figure-part" id="hangman-Right-Leg" src="distribution/images/9.png" alt="">
+        <img class="figure-part" id="hangman-Left-Foot" src="distribution/images/10.png" alt="">
+        <img class="figure-part" id="hangman-Right-Foot" src="distribution/images/11.png" alt="">
+    </div>
+    <div id="wrong-letter-container">
+        <div id="wrong-letters"></div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="word" id="word"></div>
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="final-message"></h2>
+            <h3 id="final-message-reveal-word"></h3>
+            <button id="play-button">NEW WORD</button>
+        </div>
+    </div>
+    <div class="notification-container" id="notification-container">
+        <p>That letter was already entered</p>
+    </div>
+    <div class="triangle"></div>
+</div>
+
+<script src="distribution/js/script.js"></script>
+</body>
+</html>
+
