@@ -4,7 +4,7 @@
   "description": "Hangman JavaScript",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w distribution/scss/ -o distribution/css/ --recursive"
+    "sass": "node-sass -w distribution/scss/ -o --recursive"
   },
   "author": "Mateusz Zakrzewski",
   "license": "ISC",
