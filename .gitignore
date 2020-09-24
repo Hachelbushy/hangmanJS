@@ -9,3 +9,5 @@
 /httpRequests/
 hangmanJS.iml
 *.iml
+.DS_Store
+distribution/.DS_Store
